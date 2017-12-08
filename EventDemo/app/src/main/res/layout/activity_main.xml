@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ADFF2F"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="基于监听的事件处理机制"
+            android:layout_margin="10dp"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#DA70D6"/>
+
+        <Button
+            android:id="@+id/btnInnerClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1、使用匿名内部类"/>
+
+        <Button
+            android:id="@+id/btnInnerClass2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2、使用内部类"/>
+
+        <Button
+            android:id="@+id/btnOuterClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3、使用外部类"/>
+        <TextView
+            android:id="@+id/txtShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnActivityClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4、使用Activity作为事件监听器"/>
+
+        <Button
+            android:id="@+id/btnBundleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5、直接绑定到标签"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#DA70D6"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="基于回调的事件处理机制"
+            android:layout_margin="10dp"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#ADFF2F"/>
+
+        <com.glen.eventdemo.MyButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1、回调机制-自定义View"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DEMO"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="test"
+            android:textSize="15dp"/>
+
+        <Button
+            android:id="@+id/btnOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2、回调机制-事件传播"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

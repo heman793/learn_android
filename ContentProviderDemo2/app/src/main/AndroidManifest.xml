@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.glen.contentproviderdemo2" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <provider
+            android:authorities="com.glen.contentproviderdemo2.MyPrivoder"
+            android:name=".MyProvider"
+            android:permission="com.glen.contentproviderdemo2.PROVIDER"
+            android:exported="true"/>
+        
+    </application>
+
+    <!--声明本应用可允许通信的权限-->
+    <permission android:name="com.glen.contentproviderdemo2.PROVIDER" android:protectionLevel="normal"/>
+    <!--细分读 & 写权限如下-->
+    <!--<permission android:name="com.glen.contentproviderdemo2.Read" android:protectionLevel="normal"/>-->
+    <!--<permission android:name="com.glen.contentproviderdemo2.Write" android:protectionLevel="normal"/>-->
+
+
+</manifest>

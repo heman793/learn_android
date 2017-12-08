@@ -1,0 +1,21 @@
+说明：
+    BroadcastReceiver 是一种全局监听器，因此它提供了让不同组件之间通信的新思路。比如一个程序有一个
+Acitvity 、一个 Service 而且该 Service 是通过 startService() 方法启动起来的，正常情况下，这个
+Acitvity 与通过  startService() 方法启动起来 Service 之间无法通信，但借助于 BroadcastReceiver
+，程序就可以实现两者之间的通信了。
+
+    本程序开发一个基于 Service 组件的音乐盒，程序的音乐将会在后台运行的 Service 组件负责播放，当后台
+的播放状态发生改变时，程序将会通过发送广播通知前台 Acitvity 更新界面：当用户单击前台 Acitvity 的界面
+按钮时，系统将通过发送广播通知后台 Service 来改变播放状态。
+
+    前台 Acitvity 的界面只有两个按钮，用于控制播放、暂停、停止，还有两个文本框，用于显示正在播放的歌曲
+名、歌手名。
+
+
+    本程序采用了后台 Service 来播放音乐，因此即使用户退出该程序，但后台依然会播放音乐，这就是本程序的
+独特之处。如果用户希望停止播放，只要闽南界面中的"停止"按钮，前台 Acitvity 会发送广播通知后台 Service
+停止播放。
+
+    本程序用到了两个 BroadcastReceiver，且已在程序中注册两个 IntentFilter，无需在配置文件注册。
+
+注：本示例来自李刚《疯狂Android讲义》

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 容器中央 -->
+    <ImageView
+        android:id="@+id/pic1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/img1"/>
+
+    <ImageView
+        android:id="@+id/pic2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/pic1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img2"/>
+
+    <ImageView
+        android:id="@+id/pic3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/pic1"
+        android:layout_centerVertical="true"
+        android:src="@drawable/img3"/>
+
+    <ImageView
+        android:id="@+id/pic4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/pic1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img4"/>
+    <ImageView
+        android:id="@+id/pic5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toLeftOf="@+id/pic1"
+        android:layout_centerVertical="true"
+        android:src="@drawable/img5"/>
+</RelativeLayout>

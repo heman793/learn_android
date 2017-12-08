@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NBAStar</string>
+    <string name="title_activity_teacher_detail">NBAStarDetailActivity</string>
+</resources>

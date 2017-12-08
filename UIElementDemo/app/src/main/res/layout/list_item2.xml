@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--提供给activity_simple_adapter调用-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".SimpleCursorAdapterActivity">
+
+    <TextView
+        android:id="@+id/list_name"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_weight="1"
+        android:textColor="#0000FF"
+        android:text="pig"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/list_phone"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textColor="#EA5C4D"
+        android:text="13798989898"
+        android:textSize="18sp"/>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.glen.uielementdemo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ADFF2F"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnAdapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adapter1"/>
+
+        <Button
+            android:id="@+id/btnAdapter2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adapter2"/>
+
+        <Button
+            android:id="@+id/btnSimpleAdapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SimpleAdapter"/>
+
+        <Button
+            android:id="@+id/btnSCAdapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SimpleCursorAdapter"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#DA70D6"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#DA70D6"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView1"/>
+
+        <Button
+            android:id="@+id/btnListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ListView"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
